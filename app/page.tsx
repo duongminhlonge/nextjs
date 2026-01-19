@@ -70,12 +70,22 @@ const projects = [
   },
   {
     name: "MSIS",
-    tech: "FastAPI, Next.js 13",
+    tech: "Symphony, Next.js 13",
     points: [
-      "Designed and developed RESTful APIs using FastAPI to serve reporting data.",
+      "Designed and developed RESTful APIs using Symphony to serve reporting data.",
       "Implemented authentication and authorization logic to ensure users can only read reports for their company.",
       "Built read-only API endpoints for business and company reports.",
       "Developed frontend interfaces using Next.js 13 for responsive user experiences."
+    ]
+  },
+  {
+    name: "SRA",
+    tech: "Symphony, Vue.js 3",
+    points: [
+      "Designed and developed RESTful APIs using Symphony to serve uploading image and data.",
+      "Implemented authentication and authorization logic to ensure users can only read reports for each projects.",
+      "Built read-only API endpoints for project and company reports.",
+      "Developed frontend interfaces using Vue.js 3 for responsive user experiences."
     ]
   },
   {
@@ -134,7 +144,7 @@ export default function Home() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-3">Professional Summary</h2>
           <p className="text-gray-700 leading-relaxed">
-            Software Engineer with 8+ years of experience in building and maintaining high-traffic e-commerce and web platforms. Strong expertise in Magento 1 & 2, along with solid hands-on experience in Laravel for API-driven systems and Vue.js, Next.js for modern admin dashboards and front-end integrations. Highly skilled in PHP, Python, OOP, and server management. Experienced in building scalable backends, integrating third-party services, and developing custom modules for complex business requirements.
+            Software Engineer with 8+ years of experience in building and maintaining high-traffic e-commerce and web platforms. Strong expertise in Magento 1 & 2, along with solid hands-on experience in Laravel, Symphony for API-driven systems and Vue.js, Next.js for modern admin dashboards and front-end integrations. Highly skilled in PHP, Python, OOP, and server management. Experienced in building scalable backends, integrating third-party services, and developing custom modules for complex business requirements.
           </p>
         </section>
 
@@ -148,11 +158,11 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-700 mb-1">Backend Frameworks</h3>
-              <p>Magento 1 & 2, Laravel, FastAPI, Drupal 8, Apache Airflow</p>
+              <p>Magento 1 & 2, Laravel, Symphony, FastAPI, Drupal 8, Apache Airflow</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-700 mb-1">Frontend Frameworks</h3>
-              <p>Vue.js, Next.js, Blade, HTML5, CSS3</p>
+              <p>Vue.js, Next.js, Blade, Twig, HTML5, CSS3</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-700 mb-1">Databases</h3>

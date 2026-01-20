@@ -72,9 +72,9 @@ const projects = [
   },
   {
     name: "MSIS",
-    tech: "Symphony, Next.js 13",
+    tech: "Symfony, Next.js 13",
     points: [
-      "Designed and developed RESTful APIs using Symphony to serve reporting data.",
+      "Designed and developed RESTful APIs using Symfony to serve reporting data.",
       "Implemented authentication and authorization logic to ensure users can only read reports for their company.",
       "Built read-only API endpoints for business and company reports.",
       "Developed frontend interfaces using Next.js 13 for responsive user experiences."
@@ -82,9 +82,9 @@ const projects = [
   },
   {
     name: "SRA",
-    tech: "Symphony, Vue.js 3",
+    tech: "Symfony, Vue.js 3",
     points: [
-      "Designed and developed RESTful APIs using Symphony to serve uploading image and data.",
+      "Designed and developed RESTful APIs using Symfony to serve uploading image and data.",
       "Implemented authentication and authorization logic to ensure users can only read reports for each projects.",
       "Built read-only API endpoints for project and company reports.",
       "Developed frontend interfaces using Vue.js 3 for responsive user experiences."

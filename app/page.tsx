@@ -123,7 +123,7 @@ const skills = {
 };
 
 export default function Home() {
-  const [tab, setTab] = useState<"summary" | "skills" | "projects">("summary");
+  const [tab, setTab] = useState<"summary" | "skills" | "projects" | "certifications">("summary");
 
   return (
     <main className="min-h-screen bg-gray-100 py-14 px-4 md:px-24">
@@ -163,7 +163,8 @@ export default function Home() {
             {[
               { id: "summary", label: "Summary" },
               { id: "skills", label: "Skills" },
-              { id: "projects", label: "Experience" }
+              { id: "projects", label: "Experience" },
+              { id: "certifications", label: "Certifications" }
             ].map(t => (
               <button
                 key={t.id}
@@ -244,7 +245,7 @@ export default function Home() {
                   className="relative border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition"
                 >
                   {/* Accent line */}
-                  <div className="absolute left-0 top-6 bottom-6 w-0.5 bg-gray-900 rounded-full" />
+                  <div className="absolute left-0 top-6 bottom-6 w-0.5 rounded-full" />
 
                   <div className="pl-6">
                     <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
@@ -264,6 +265,28 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+          )}
+
+          {tab === "certifications" && (
+            <div className="max-w-3xl mx-auto">
+              <div className="border border-gray-200 rounded-2xl p-6 hover:shadow-md transition">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+                  Certifications
+                </h2>
+
+                <p className="text-gray-700">
+                  Magento 2 Adobe Certified Expert – Adobe Commerce Developer
+                </p>
+
+                <a
+                  href="https://www.credly.com/badges/ac0fdd6b-df37-4035-a19f-e07ce0213e8b/linked_in_profile"
+                  target="_blank"
+                  className="inline-block mt-2 text-blue-600 underline"
+                >
+                  View Credential
+                </a>
+              </div>
             </div>
           )}
         </section>
